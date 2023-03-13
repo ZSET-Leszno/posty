@@ -1,0 +1,536 @@
+body {
+  background-color: rgb(27, 27, 27);
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 16px;
+  word-spacing: 2px;
+  color: #000000;
+  margin: 0%;
+}
+
+.logreg {
+  margin: auto;
+  margin-top: 3%;
+  padding: 7% 5% 5% 5%;
+  min-height: 50px;
+  min-width: 200px;
+  max-height: 20%;
+  max-width: 20%;
+  border-radius: 50px;
+  background-color: rgb(209, 21, 21, 0.5);
+  box-shadow: 5px 5px 5px rgb(27, 27, 27);
+}
+
+.login_card {
+  grid-area: 1 / 2 / 3 / 3;
+  padding: 5% 5% 5% 5%;
+  min-height: 200px;
+  min-width: 200px;
+  max-height: 40%;
+  max-width: 15%;
+  border-radius: 50px;
+  background-color: rgb(224, 126, 34, 0.5);
+  box-shadow: 5px 5px 5px rgb(27, 27, 27);
+}
+
+.register_card {
+  grid-area: 1 / 1 / 3 / 2;
+  padding: 5% 5% 5% 5%;
+  min-height: 400px;
+  min-width: 200px;
+  max-height: 40%;
+  max-width: 15%;
+  border-radius: 50px;
+  background-color: rgb(224, 126, 34, 0.5);
+  box-shadow: 5px 5px 5px rgb(27, 27, 27);
+}
+
+.login_form,
+.register_form {
+  color: snow;
+}
+
+.logreg_input {
+  background-color: #bebebe;
+}
+
+.button-50 {
+  background-color: black;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none
+}
+
+.button-50:focus {
+  text-decoration: none;
+}
+
+.button-50:hover {
+  text-decoration: none;
+}
+
+.button-50:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-50:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media only screen and (max-width: 1000px) {
+  .button-50 {
+    background-color: black;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 10px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    padding: 8px 10px;
+    text-align: center;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-decoration: none
+  }
+}
+
+.button-logout {
+  background-color: black;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 9px;
+  line-height: 10px;
+  overflow: visible;
+  margin-top: 0.2%;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  float: right;
+  text-decoration: none
+}
+
+.button-logout:focus {
+  text-decoration: none;
+}
+
+.button-logout:hover {
+  text-decoration: none;
+}
+
+.button-logout:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-logout:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media only screen and (max-width: 1000px) {
+  .button-logout {
+    background-color: black;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 7px;
+    line-height: 0px;
+    overflow: visible;
+    margin-top: 3px;
+    text-align: center;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    float: right;
+    text-decoration: none
+  }
+}
+
+.button-del {
+  background-color: rgb(255, 0, 0);
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, rgb(255, 0, 0) 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none
+}
+
+.button-del:focus {
+  text-decoration: none;
+}
+
+.button-del:hover {
+  text-decoration: none;
+}
+
+.button-del:active {
+  box-shadow: rgba(255, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-del:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, rgb(255, 0, 0) 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+.alert_p {
+  background-color: black;
+  color: red;
+  padding: 2px;
+  height: 5%;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.topnav {
+  background-color: rgb(224, 126, 34);
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .topnav {
+    background-color: rgb(224, 126, 34);
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 16px 6px;
+    text-decoration: none;
+    font-size: 11px;
+  }
+
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+
+  .topnav a.active {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    height: 100%;
+  }
+
+  .user_info {
+    float: right;
+    margin-right: 10px;
+    margin-top: -10px;
+  }
+}
+
+.user_info {
+  float: right;
+  margin-right: 10px;
+}
+
+.left_banner {
+  margin-top: 0px;
+  display: inline-block;
+  width: 16%;
+  height: 100%;
+}
+
+.middle_banner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  display: inline-block;
+  background-color: rgb(53, 53, 53);
+  width: 68%;
+  height: 100%;
+  align-self: center;
+  border-left: solid black;
+  border-right: solid black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .middle_banner {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    margin-left: -11%;
+    margin-top: 0px;
+    display: inline-block;
+    background-color: rgb(53, 53, 53);
+    width: 88%;
+    height: 100%;
+    align-self: center;
+    border-left: solid black;
+    border-right: solid black;
+  }
+}
+
+.right_banner {
+  margin-top: 0px;
+  display: inline-block;
+  width: calc(16%-50);
+  height: 100%;
+}
+
+.wyp1 {
+  height: 20px;
+  width: 100%;
+}
+
+.wyp2 {
+  height: 30px;
+  width: 100%;
+}
+
+.footer {
+  border-top: 5px solid black;
+  background-color: rgb(60, 60, 60);
+  clear: both;
+  padding-bottom: 5px;
+  color: #ddd;
+  font-size: 12px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  transition: transform 0.3s ease-out;
+  transform: translateY(71%);
+}
+
+.footer-normal {
+  border-top: 5px solid black;
+  background-color: rgb(60, 60, 60);
+  clear: both;
+  padding-bottom: 10px;
+  color: #ddd;
+  font-size: 12px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+
+}
+
+
+.post_card {
+  background-color: rgb(107, 107, 107);
+  border-radius: 20px;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+  height: fit-content;
+}
+
+.post_txt {
+  padding: 5px;
+  border-style: groove;
+  font-style: normal;
+  font-weight: lighter;
+  font-family: 'Times New Roman', Times;
+  background-color: rgb(211, 211, 211);
+  margin: auto;
+  height: 100%;
+  width: 90%;
+  word-break: break-word;
+}
+
+.title {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.display_profile_info {
+  margin-top: 100px;
+  background-color: rgb(170, 170, 170);
+  max-height: 20%;
+  max-width: 30%;
+  min-width: 230px;
+  min-height: 100px;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.display_users_info {
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(170, 170, 170);
+  max-height: 20%;
+  max-width: 40%;
+  min-width: 230px;
+  min-height: 100px;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+td {
+  border: white solid 1px;
+  padding: 7px;
+}
+
+.userstable {
+  color: #b8a200;
+  padding: 5px;
+  text-align: center;
+  font-family: "Roboto", Roboto, sans-serif;
+  border: solid white 1px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.userstable tr:nth-child(even) {
+  padding: 5px;
+  border: solid white 1px;
+  background-color: #363434;
+}
+
+.userstable tr:nth-last-child(even) {
+  padding: 5px;
+  border: solid white 1px;
+  background-color: #1f1d1d;
+}
+
+.userstable td:hover {
+  font-weight: 540;
+  color: black;
+  background-color: #ddd;
+}
+
+.userstable th {
+  border: solid white 1px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #1f1d1d;
+  color: white;
+}
+
+.button-admin {
+  color: purple;
+  border: 1px solid purple;
+  background-color: purple;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, purple 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 30px;
+  text-align: center;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none
+}
+
+.button-admin:focus {
+  text-decoration: none;
+}
+
+.button-admin:hover {
+  text-decoration: none;
+  border: 1px solid purple;
+  background-color: rgb(0, 0, 0);
+}
+
+.button-admin:active {
+  box-shadow: rgba(58, 3, 75, 0.125) 0 3px 5px inset;
+  outline: 0;
+}
+
+.button-admin:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, purple 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+.view-profile {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.view-profile:hover {
+  color: black;
+  background-color: orange;
+  border: solid 1px orange;
+}
